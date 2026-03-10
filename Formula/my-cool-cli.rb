@@ -1,20 +1,20 @@
 class MyCoolCli < Formula
   desc "My experimental Rust CLI tool"
   homepage "https://github.com/schaudhary2k/my-cool-cli"
-  version "0.1.7"
+  version "0.1.8"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.7/my-cool-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "559f83294afb2ef9da1927a14381c754df743cdbffc4fdc1b2ed3d2c59fca187"
+      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.8/my-cool-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "51cfe7980e4b1e13c8bc8df91c99dd0c5102e35b9d35c64af97d2fd20d564b92"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.7/my-cool-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "ed57609f78de6e5bddc6e90278fe0fb1378557b38d3e325e246ac27fa34ed01f"
+      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.8/my-cool-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "e768a9287d47c7356110820df356b734348489f16fc31ab8f1503efe6d01d2aa"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.7/my-cool-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "aceaccf8901a5e84bbecd304f57af323e81f5f4325409ac29ffdf4467b71128d"
+      url "https://github.com/schaudhary2k/my-cool-cli/releases/download/v0.1.8/my-cool-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "34705df1a8e916519d66e9dae38fb55135c53ccb746457d73d22dae16af27f94"
   end
   license "MIT"
 
